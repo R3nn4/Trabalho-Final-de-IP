@@ -6,3 +6,5 @@ Podemos mandar mensagens entre pessoas ou nos próprios grupos
 Devemos remover mensagens que foram enviadas recentemente
 
 Alunos João Renna e Luiz Henrique
+
+EAE ZE MANE TO APRENDENDO ESSA PORRA!!! (nao aceita esse pull request pelo amor de deus)
