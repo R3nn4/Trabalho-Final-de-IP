@@ -3,6 +3,7 @@
 #include <string.h>
 #include "Pessoas.h"
 #include "Grupos.h"
+#include "Conversas.h"
 #include "funcs_uteis.h"
 #define SUCESSO 0
 
@@ -11,10 +12,14 @@ int main(int argc, char ** argv)
     FILE *pessoas = fopen("Pessoas.txt", "r");
     FILE *grupos = fopen("Grupos.txt", "r");
     FILE *conversas = fopen("Conversas.txt", "r");
-    int choice, n_pessoas = 0, n_grupos = 0;
+    int choice, n_pessoas = 0, n_grupos = 0, n_conversas = 0;
     Pessoa *p = NULL;
     Grupo *g = NULL;
-    Conversas *c = NULL;
+    Conversa *c = NULL;
+    Mensagens **m = NULL;
+
+    m = (Mensagens*)malloc(n_conversas * sizeof(Mensagens));
+
         cria_arquivos(pessoas, grupos, conversas);
         do{
             printf("\n\t\tOquerrr\n");
@@ -33,7 +38,7 @@ int main(int argc, char ** argv)
                 
                 break;  
             case 3:
-                /*code*/                //Módulo de Conversas
+
                 break; 
             default:                    //Opção inválida
                 break;
